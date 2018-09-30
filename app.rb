@@ -4,6 +4,7 @@ class App < Sinatra::Base
   # Write your code here!
   get '/reversename/:name' do 
     @name = name.reverse
+    "#{@name}"
   end 
   
   get '/square/:number' do 
